@@ -14,6 +14,8 @@ from tkinter import messagebox
 # Importiert die PhotoImage-Klasse für die Verwendung von Bildern
 from tkinter import PhotoImage
 
+import monats_uebersicht
+
 
 # Funktion zum Starten des Main window
 def start_window(parent_window):
@@ -75,7 +77,7 @@ def start_window(parent_window):
 	main_window.rowconfigure(6, weight=1)  # Zeile 6 konfigurieren
 
 	# Erstellen einer Schaltfläche "Monatsauswahl und Übersicht"
-	monate_button = tk.Button(main_window, text="Monate Übersicht", command=lambda: x)
+	monate_button = tk.Button(main_window, text="Monate Übersicht", command=lambda: monats_uebersicht.month_window(main_window))
 
 	# Konfigurieren der Schaltfläche mit Hintergrundfarbe, Schriftfarbe, Schriftart und weiteren Eigenschaften
 	#overview.config(bg=chip.read_row("settings", "bg")[0],   # Hintergrundfarbe
