@@ -35,7 +35,7 @@ def start_window(parent_window):
 
 	try:
 
-		main_window.iconphoto(True, icon)  # Setzen des Icons für das Fenster
+		main_window.iconphoto(True, coin_variable.icon)  # Setzen des Icons für das Fenster
 
 	except Exception as e:
 
