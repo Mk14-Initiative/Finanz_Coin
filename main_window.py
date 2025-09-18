@@ -16,8 +16,6 @@ from tkinter import PhotoImage
 
 import monats_uebersicht
 
-import coin_variable
-
 # Funktion zum Starten des Main window
 def start_window(parent_window):
 
@@ -32,15 +30,6 @@ def start_window(parent_window):
 
 	# Erstellen eines neuen Tkinter-Fensters
 	main_window = tk.Tk()
-
-	try:
-
-		main_window.iconphoto(True, coin_variable.icon)  # Setzen des Icons für das Fenster
-
-	except Exception as e:
-
-		# Fehlerbehandlung, wenn das Laden des Icons fehlschlägt (z.B. wenn die Datei nicht gefunden wird)
-		pass
 
 	# Setzen des Titels für das Fenster
 	main_window.title("Finanz Coin")
