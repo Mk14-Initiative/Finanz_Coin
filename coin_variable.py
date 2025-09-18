@@ -1,0 +1,1 @@
+icon = "coin.ico"

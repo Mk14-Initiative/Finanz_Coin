@@ -16,6 +16,7 @@ from tkinter import PhotoImage
 
 import monats_uebersicht
 
+import coin_variable
 
 # Funktion zum Starten des Main window
 def start_window(parent_window):
@@ -33,8 +34,6 @@ def start_window(parent_window):
 	main_window = tk.Tk()
 
 	try:
-		# Versuchen, ein Icon für das Fenster zu setzen
-		icon = PhotoImage(file="coin.ico")  # Laden des Icons aus einer Datei
 
 		main_window.iconphoto(True, icon)  # Setzen des Icons für das Fenster
 
