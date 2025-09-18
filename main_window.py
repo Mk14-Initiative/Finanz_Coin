@@ -144,7 +144,7 @@ def start_window(parent_window):
 	#			  activeforeground=chip.read_row("settings", "activeforeground")[0])
 
 	# Erstellen einer Schaltfläche "Settings"
-	settings_button = tk.Button(main_window, text="Settings", command=lambda: x)
+	settings_button = tk.Button(main_window, text="Einstellungen", command=lambda: x)
 
 	# Konfigurieren der Schaltfläche mit denselben Eigenschaften
 	#settings_button.config(bg=chip.read_row("settings", "bg")[0],
@@ -161,7 +161,7 @@ def start_window(parent_window):
 	#				   activeforeground=chip.read_row("settings", "activeforeground")[0])
 
 	# Erstellen einer Schaltfläche "Help"
-	help_button = tk.Button(main_window, text="Help", command=lambda: x)
+	help_button = tk.Button(main_window, text="Hilfe", command=lambda: x)
 
 	# Konfigurieren der Schaltfläche mit denselben Eigenschaften wie zuvor
 	#help_button.config(bg=chip.read_row("settings", "bg")[0],
@@ -178,7 +178,7 @@ def start_window(parent_window):
 	#			   activeforeground=chip.read_row("settings", "activeforeground")[0])
 
 	# Erstellen einer Schaltfläche "Close"
-	close_button = tk.Button(main_window, text="close", command=main_window.destroy)
+	close_button = tk.Button(main_window, text="Schließen", command=main_window.destroy)
 
 	# Konfigurieren der Schaltfläche mit denselben Eigenschaften
 	#close_button.config(bg=chip.read_row("settings", "bg")[0],
