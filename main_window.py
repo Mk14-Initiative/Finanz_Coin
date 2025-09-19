@@ -19,6 +19,8 @@ import gespartes
 
 import statistik
 
+import settings
+
 # Funktion zum Starten des Main window
 def start_window(parent_window):
 
@@ -136,7 +138,7 @@ def start_window(parent_window):
 	#			  activeforeground=chip.read_row("settings", "activeforeground")[0])
 
 	# Erstellen einer Schaltfläche "Settings"
-	settings_button = tk.Button(main_window, text="Einstellungen", command=lambda: x)
+	settings_button = tk.Button(main_window, text="Einstellungen", command=lambda: settings.einstellung_window(main_window))
 
 	# Konfigurieren der Schaltfläche mit denselben Eigenschaften
 	#settings_button.config(bg=chip.read_row("settings", "bg")[0],
