@@ -16,6 +16,8 @@ from tkinter import PhotoImage
 
 import monats_uebersicht
 
+import fixkosten
+
 # Funktion zum Starten des Main window
 def start_window(parent_window):
 
@@ -82,7 +84,7 @@ def start_window(parent_window):
 	#			activeforeground=chip.read_row("settings", "activeforeground")[0])  # Schriftfarbe im aktiven Zustand
 
 	# Erstellen einer Schaltfläche "Money Time"
-	fixkosten_button = tk.Button(main_window, text="Fixkosten", command=lambda: x)
+	fixkosten_button = tk.Button(main_window, text="Fixkosten", command=lambda: fixkosten.fixkosten_window(main_window))
 
 	# Konfigurieren der Schaltfläche mit denselben Eigenschaften
 	#money_time.config(bg=chip.read_row("settings", "bg")[0],
