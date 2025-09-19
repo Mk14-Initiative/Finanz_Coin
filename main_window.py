@@ -17,6 +17,8 @@ import fixkosten
 
 import gespartes
 
+import statistik
+
 # Funktion zum Starten des Main window
 def start_window(parent_window):
 
@@ -117,7 +119,7 @@ def start_window(parent_window):
 	#			   activeforeground=chip.read_row("settings", "activeforeground")[0])
 
 	# Erstellen einer Schaltfläche "Statistic"
-	statistik_button = tk.Button(main_window, text="Statistik", command=lambda: x)
+	statistik_button = tk.Button(main_window, text="Statistik", command=lambda: statistik.statistik_window(main_window))
 
 	# Konfigurieren der Schaltfläche mit denselben Eigenschaften wie zuvor
 	#statistics.config(bg=chip.read_row("settings", "bg")[0],
