@@ -11,6 +11,9 @@ from tkinter import *
 # Importiert die messagebox für die Anzeige von Dialogfeldern
 from tkinter import messagebox
 
+# Importiert die PhotoImage-Klasse für die Verwendung von Bildern
+from tkinter import PhotoImage
+
 import monats_uebersicht
 
 import fixkosten
@@ -37,6 +40,11 @@ def start_window(parent_window):
 
 	# Erstellen eines neuen Tkinter-Fensters
 	main_window = tk.Tk()
+
+	# Versuchen, ein Icon für das Fenster zu setzen
+	icon = PhotoImage(file="coin.png")  # Laden des Icons aus einer Datei
+
+	main_window.iconphoto(True, icon)  # Setzen des Icons für das Fenster
 
 	# Setzen des Titels für das Fenster
 	main_window.title("Finanz Coin")
