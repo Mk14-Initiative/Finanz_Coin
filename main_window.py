@@ -11,12 +11,11 @@ from tkinter import *
 # Importiert die messagebox für die Anzeige von Dialogfeldern
 from tkinter import messagebox
 
-# Importiert die PhotoImage-Klasse für die Verwendung von Bildern
-from tkinter import PhotoImage
-
 import monats_uebersicht
 
 import fixkosten
+
+import gespartes
 
 # Funktion zum Starten des Main window
 def start_window(parent_window):
@@ -101,7 +100,7 @@ def start_window(parent_window):
 	#			  activeforeground=chip.read_row("settings", "activeforeground")[0])
 
 	# Erstellen einer Schaltfläche "Reserve money View"
-	gespartes_button = tk.Button(main_window, text="Gespartes Übersicht", command=lambda: x)
+	gespartes_button = tk.Button(main_window, text="Gespartes Übersicht", command=lambda: gespartes.gespartes_window(main_window))
 
 	# Konfigurieren der Schaltfläche mit denselben Eigenschaften
 	#reserve_bar.config(bg=chip.read_row("settings", "bg")[0],
