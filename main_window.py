@@ -21,6 +21,8 @@ import statistik
 
 import settings
 
+import hilfe
+
 # Funktion zum Starten des Main window
 def start_window(parent_window):
 
@@ -155,7 +157,7 @@ def start_window(parent_window):
 	#				   activeforeground=chip.read_row("settings", "activeforeground")[0])
 
 	# Erstellen einer Schaltfläche "Help"
-	help_button = tk.Button(main_window, text="Hilfe", command=lambda: x)
+	help_button = tk.Button(main_window, text="Hilfe", command=lambda: hilfe.hilfe_window(main_window))
 
 	# Konfigurieren der Schaltfläche mit denselben Eigenschaften wie zuvor
 	#help_button.config(bg=chip.read_row("settings", "bg")[0],
