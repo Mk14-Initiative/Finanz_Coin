@@ -1,7 +1,7 @@
-import main_window
 
 import libary_install
 
+import main_window
 
 def main():
 
